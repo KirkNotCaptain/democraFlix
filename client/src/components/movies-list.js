@@ -5,7 +5,6 @@ import MovieCard from './movie-card.js';
 
 var MoviesList = () => {
   const context = useContext(MovieContext);
-  console.log(context);
   return (
     <div className="movies-list">
       {context.popularMovies.map((movie) => {

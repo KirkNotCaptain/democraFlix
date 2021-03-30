@@ -19,7 +19,11 @@ html {
 .App-link {
   color: #61dafb;
 }
-
+.login-form {
+  width: 50%;
+  margin: auto;
+  padding: 50% 0;
+}
 .title {
   height: 10vh;
   margin: 0;
@@ -29,7 +33,7 @@ html {
 .movies-container {
   border: 1px solid white;
   width: 99%;
-  height: 60vh;
+  height: 500px;
 }
 
 .movies-container {
@@ -41,17 +45,17 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .movie-card {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 400px;
   border: 1px solid white;
   margin: 10px;
 }
 
 .movie-img {
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 70%;
 }

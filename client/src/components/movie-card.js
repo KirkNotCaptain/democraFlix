@@ -4,10 +4,11 @@ import MovieContext from '../context.js';
 
 var MovieCard = ({ movie }) => {
   const context = useContext(MovieContext);
+  // console.log('shared movies: ', context.selectedMovies);
 
   var handleSelection = (movie) => {
-    console.log(movie);
-    context.setSelectedMovies([...context.selectedMovies, movie]);
+    // console.log('SELECTED MOVIE: ', movie);
+    context.updateSharedMovies(movie);
   };
 
   return (
@@ -22,8 +23,8 @@ var MovieCard = ({ movie }) => {
         src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
         alt={movie.original_title}
       />
-      <span>{movie.title}</span>
-      <span>{movie.vote_average}</span>
+      <h3>{movie.title}</h3>
+      <h4>Rating: {movie.vote_average}</h4>
     </div>
   );
 };
