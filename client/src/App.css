@@ -29,9 +29,29 @@ html {
 .movies-container {
   border: 1px solid white;
   width: 99%;
-  height: 45vh;
+  height: 60vh;
 }
 
 .movies-container {
   margin-top: 10%;
+}
+
+.movies-list,
+.choices-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.movie-card {
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.movie-img {
+  width: 100px;
+  height: 150px;
 }
